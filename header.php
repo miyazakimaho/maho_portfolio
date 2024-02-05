@@ -15,6 +15,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdCZFQpAAAAAJqhXfF3zO692IpOCx8wyGSzsfFn"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -29,7 +30,7 @@
 
             <nav id="nav">
                 <ul class="nav-list">
-                    <li><a href="/">news</a></li>
+                    <li><a href="<?php echo home_url(); ?>/category/news/">news</a></li>
                     <li><a href="/">about</a></li>
                     <li><a href="/">design</a></li>
                     <li><a href="/">skill</a></li>

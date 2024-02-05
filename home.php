@@ -13,6 +13,10 @@
                 </div>
             </div>
 
+            <div class="mv-img-text">
+                <img src="img/mvtext.png" alt="">
+            </div>
+
             <div id="mv-container">
                 <div id="mv-text">
                     <p>web design, graphic design, travel, coding and more..</p>
@@ -21,7 +25,9 @@
                 <div id="mv-news">
                     <div id="mv-news-top">
                         <h1>what's new</h1>
-                        <a href="#">all view</a>
+                        <a href="<?php echo home_url(); ?>/category/news/">
+                            all view
+                        </a>
                     </div>
                     
                     <?php
@@ -100,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="about-img">
+            <div class="about-img inview fadein">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/about.jpg" alt="">
             </div>
         </section>
@@ -113,7 +119,7 @@
                     Webデザイナーです
                 </h1> 
     
-                <div class="design-img">
+                <div class="design-img inview fadein">
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/skill_html.jpg" alt=""></div>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/skill_css.jpg" alt=""></div>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/service_all.jpg" alt=""></div>
@@ -137,7 +143,7 @@
                     skill
                 </h1> 
     
-                <div class="skill-img">
+                <div class="skill-img inview fadein">
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/skills/html.png" alt=""></div>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/skills/css.png" alt=""></div>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/img/skills/js.png" alt=""></div>
@@ -165,7 +171,7 @@
                 <p>pick up</p>
             </div>
             
-            <div id="works-content">
+            <div id="works-content" class="inview fadein">
                 <div id="works-list" class="works-carousel">
                     <li class="works-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/works/01.png" alt="">
@@ -202,7 +208,7 @@
                 <p>私にできること</p>
             </div>
 
-            <div class="service-container">
+            <div class="service-container inview fadein">
                 <div id="service-list" class="row col-12">
                     <li class="col-lg-3">
                         <p>ホームページ作成</p>
@@ -256,7 +262,7 @@
 
             <div id="contact-bg">
                 <div id="contact-btn">
-                    <a href="#">
+                    <a href="<?php echo home_url(); ?>/お問い合わせ">
                         <p>クラウドソーシングから<br>
                             ご連絡お願いいたします</p>
                     </a>

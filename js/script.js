@@ -65,3 +65,15 @@ function hamburger() {
         jQuery('.nav-list').removeClass('active');
     }
 }
+
+// scroll時のheader背景変更
+jQuery(function () {
+    jQuery(window).on('scroll', function () {
+        const sliderHeight = jQuery("#mv-img").height();
+        if ( sliderHeight < jQuery(this).scrollTop()) {
+            jQuery('#container').addClass('change-color');
+        } else {
+            jQuery('#container').removeClass('change-color');
+        }
+    });
+});

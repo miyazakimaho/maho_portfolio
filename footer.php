@@ -1,6 +1,9 @@
 <!-- footer -->
 <footer id="footer">
         <div id="footer-upper">
+            <a class="pagetop" href="#">
+                <div class="pagetop__arrow"></div>
+            </a>
 
             <nav id="footer-nav">
                 <ul id="footer-nav-list">
@@ -30,6 +33,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.inview.min.js"></script>
     <?php wp_footer(); ?>
 </body>
 </html>
